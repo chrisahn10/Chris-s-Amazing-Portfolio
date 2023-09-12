@@ -1,0 +1,48 @@
+body {
+    color: white;
+    background-color: rgb(97, 219, 128);
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+header {
+    font-size: 100px;
+    font-weight: bold;
+    color: transparent;
+    -webkit-text-stroke: .01px white;
+}
+
+h2 {
+    font-size: 72px;
+    color: transparent;
+    -webkit-text-stroke: .01px white;
+}
+
+nav {
+    text-align: right;
+    display: inline;
+}
+
+li {
+    display: inline;
+    font-size: 40px;
+    line-height: 60px;
+}
+
+p  {
+    font-size: 30px;
+    line-height: 50px;
+}
+
+footer {
+    text-align: center;
+    color: black;
+    background-color: white;
+    width: 100%;
+    height: 100px;
+    line-height: 100px;
+}
+
+.AboutMe {
+    margin: 30px auto;
+    border: 10px white;
+}
