@@ -10,34 +10,40 @@
   <link href="https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap" rel="stylesheet">
 </head>
 
-<body class="back">
-    <header>
-        <h1 class = "header">Hello! placeholder</h1>
-        <nav>
-            <ul>
-                <li><a href="#AboutMe">Me</a></li>
-                <li><a href="#mywork">My Work</a></li>
-                <li><a href="#contact">Contact Me</a></li>
-                <li><a href="#resume">Resume</a></li>
-            </ul>
-        </nav>
+<body>
+    <header class = "header container">
+            <nav>
+                <ul class = "header__menu">
+                    <li><a class="header__link" href = "#home">Home</a></li>
+                    <li><a class="header__link" href = "#work">My Work</a></li>
+                    <li><a class="header__link" href = "#contact">Contact</a></li>
+                    <li><a class="header__link" href = "#resume">Resume</a></li>
+                </ul>
+            </nav>
     </header>
+    
+    <main>
+        <section class="hero container">
+            <img class="hero__img" src="./assets/images/profile-pic.jpg" alt="Profile Picture" />
+            <h2 class="hero__subtitle">Hi, I'm Chris 👋</h2>
+            <h1 class="hero__title">Fullstack Bootcamp Student</h1>
+            <p class="hero__description">An up and coming <strong>Full Stack Web Developer</strong> specializing in building web applications in pixel-perfect, interactive, user-friendly ways.</p>
+        </section>
 
-    <div class = "landingImage"></div>
+        <section id = "about" class = "about containter section"> 
+            <h2 class="about__title">About me!</h2>
+            <p class="about__description">Hello! My name is Chris Ahn and I grew up in Cary, 
+                North Carolina. I graduated from UNC-Chapel hill with 
+                an Economics degree, but recently found a great passion and 
+                drive for coding! Being able to manipulate web applications 
+                and other programs with code and seeing it all come together
+                is really exciting to me! I look forward to developing my skills
+                as a programmer, feel free to see what I have done so far!
+            </p>
+        </section>
 
-    <section class = "AboutMe"> 
-        <h2>About me!</h2>
-        <p>Hello! My name is Chris Ahn and I grew up in Cary, 
-            North Carolina. I graduated from UNC-Chapel hill with 
-            an Economics degree, but recently found a great passion and 
-            drive for coding! Being able to manipulate web applications 
-            and other programs with code and seeing it all come together
-            is really exciting to me! I look forward to developing my skills
-            as a programmer, feel free to see what I have done so far!
-        </p>
-    </section>
-
-    <aside>does this make it to the side? </aside>
+        <aside>does this make it to the side? </aside>
+    </main>
 </body>
 
 

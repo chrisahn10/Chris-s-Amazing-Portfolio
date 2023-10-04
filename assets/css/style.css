@@ -1,78 +1,84 @@
+:root {
+    --clr-black: #081C15;
+    --clr-white: #D8F3DC;
+    --clr-lightgreen: #95D5B2;
+    --clr-green: #52B788;
+    --clr-drkgreen: #2D6A4F;
+
+}
+
 * {
-    box-sizing: border-box;
+    margin: 0;
 }
 
 body {
-    color: white;
-    background-color: rgb(97, 219, 128);
-    font-family: 'Bebas Neue', sans-serif;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: var(--clr-drkgreen);
+    color: var(--clr-lightgreen);
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    user-select: none;
+}
+
+strong {
+    color: var(--clr-white);
 }
 
 .header {
-    font-size: 100px;
-    font-weight: bold;
-    color: transparent;
-    -webkit-text-stroke: .01px white;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-top: 75px;
+    padding-bottom: 25px;
+    position: relative;
+    z-index: 10;
+    list-style: none;
 }
 
-h1 {
-    display: inline-block;
-    padding: 30px;
+.header__menu {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    gap: 25px;
 }
 
-h2 {
-    font-size: 72px;
-    color: transparent;
-    -webkit-text-stroke: .01px white;
+.header__link {
+    font-size: medium;
+    font-weight: 600;
+    color: var(--clr-lightgreen);
+    transition: color 0.3s;
 }
 
-nav {
-    float: right;
-    padding-top: 45px;
-    margin-right: 15px;
+.header__link:hover {
+    color: var(--clr-white);
 }
 
-ul {
-    list-style-type: none;
-}
-
-li {
-    margin: 15px;
-    display: inline-block;
-    font-size: 40px;
-}
-
-a {
-    color: white;
-    text-decoration: none;
-}
-
-p  {
-    font-size: 30px;
-    line-height: 50px;
-}
-
-footer {
+.hero {
     text-align: center;
-    color: rgb(46, 43, 43);
-    background-color: white;
-    width: 100%;
-    line-height: 150px;
-
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 75px;
+    gap: 25px;
 }
 
-.landingImage {
-    height: 400px;
-    width: 100%;
-    margin-bottom: 25px;
-    background-image: url("../images/cherry-blossom.png");
-    background-size: cover;
-    background-position: center;
+.hero__img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
 }
 
-.AboutMe {
-    padding-left: 40px;
-    padding-right: 40px;
-    margin: 30px auto;
-    border: 10px white;
+.hero__title {
+    color: var(--clr-lightgreen);
+    font-size: 50px;
+    line-height: 0.9;
+}
+
+.hero__subtitle {
+    color: var(--clr-green);
+    font-size: 25px;
 }
