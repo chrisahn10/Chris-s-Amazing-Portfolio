@@ -51,6 +51,7 @@ strong {
     gap: 25px;
 }
 
+.contact__list,
 .header__link {
     font-size: medium;
     font-weight: 600;
@@ -58,6 +59,7 @@ strong {
     transition: color 0.3s;
 }
 
+.contact__list:hover,
 .header__link:hover {
     color: var(--clr-white);
 }
@@ -111,10 +113,13 @@ strong {
     height: 920px;
 }
 
+.contact__header,
+.projects__header,
 .about__title {
     font-size: 40px;
 }
 
+.projects__description,
 .about__description {
     font-size: 24px;
     max-width: 60ch;
@@ -142,6 +147,21 @@ strong {
 .about__ul-container {
     display: flex;
 
+}
+
+.projects__container {
+    display: flex;
+}
+
+.contact {
+    display: flex;
+}
+
+.contact__ul {
+    display: flex;
+    align-items: center;
+    padding-left: 108px;
+    gap: 32px;
 }
 
 .container {
